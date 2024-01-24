@@ -1,0 +1,24 @@
+@mixin headingUC {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+@mixin navigationUC {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+@mixin spanPill ($bgColor) {
+	background-color: $bgColor;
+	width: max-content;
+	color: $color--white;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding: 0 16px;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	line-height: 1;
+	border-radius: 7px;
+	margin-left: 10px;
+}

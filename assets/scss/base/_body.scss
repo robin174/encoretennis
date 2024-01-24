@@ -1,0 +1,34 @@
+@import "bourbon";
+
+/* Initial sizing - set in 'helpers' - '_variables.scss' */
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+@media (min-width: 576px) {}
+
+/* Larger than small tablet */
+@media (min-width: 768px) {}
+
+/* Larger than tablet */
+@media (min-width: 992px) {}
+
+/* Larger than desktop */
+@media (min-width: 1200px) {}
+
+a {
+	transition: 0.3s;
+}
+
+@media (min-width: 992px) { 
+	body {
+		& a:hover {
+			cursor: url('../images/tennis-ball-solid.png'), url('../images/tennis-ball-solid.svg'), pointer;	
+		}
+	}
+}
+
+hr {
+	margin: 2rem 0;
+	background-color: rgba(255,255,255,0.5);
+}

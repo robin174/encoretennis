@@ -1,0 +1,11 @@
+figure {
+	margin: 0;
+	padding: 0;
+	&.headshot-logo {
+		& img {
+			opacity: 0.1;
+			//border: 1px solid rgba(255,255,255,0.5);
+			height: 150px;
+		}
+	}
+}

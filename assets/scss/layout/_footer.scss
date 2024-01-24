@@ -1,0 +1,153 @@
+footer {
+	@include brand--font-sans-medium;
+	background-color: $color--primary;
+	color: $color--white;
+	padding: $padding--general 0;
+	& h4 {
+		@include brand--font-sans-medium;
+		font-size: 1.2rem;
+  		text-transform: uppercase;
+  		letter-spacing: 0.05em;
+  		color: $color--secondary;
+  		margin-bottom: $margin--small*1.2;
+  	}
+	& a {
+		transition: $base--transition;
+		text-decoration: none;
+		color: $color--white;
+		&:hover {
+			color: $color--secondary;
+		}
+	}
+	& ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		& li {
+			font-size: 1.1rem;
+			line-height: 1.3;
+			margin-bottom: $margin--small*1.2;
+		}
+	}
+	& p {
+		&.atm-copyright {
+			font-size: 0.9rem;
+			line-height: 1.4;
+			margin-bottom: 3px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	& figure.footer-logo {
+		margin-bottom: $margin--small;
+		& img {
+			transition: $base--transition;
+			// border: 1px solid rgba(255,255,255,0.5);
+			height: 150px;
+			&:hover {
+				// border: 1px solid rgba($color--secondary,1);
+			}
+		}
+	}
+	& a {
+		color: $color--secondary;
+		&:hover {
+			color: $color--white;
+		}
+	}
+}
+
+.org--content-newsletter {
+	& form {
+		& input {
+			@include brand--font-sans-medium;
+			border-radius: 0;
+			border: none;
+		}
+		& button[type=submit] {
+			@include brand--font-sans-bold;
+			background-color: $color--secondary;
+			color: $color--black;
+			border: none;
+			border-radius: 0;
+		}
+	}
+}
+
+
+// TO CHECK
+.mol__unit-mailchimp {
+	margin-bottom: $margin--general;
+	& .unit--mc-intro {
+		width: 100%;
+		background-color:$color--secondary;
+		padding:5px 10px;
+		color:$color--white;
+	}
+	& .unit--mc-input {
+		background-color:$color--white;
+		padding:5px 10px;
+		color:$color--secondary;
+	}
+	& input.unit--mc-input {
+		width: 100%;
+		border: none;
+		background-color:#fff;
+		padding:5px 10px;
+		&::-webkit-input-placeholder { /* Edge */
+		  color: $color--secondary;
+		}
+		&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		  color: $color--secondary;
+		}
+		&::placeholder {
+		  color: $color--secondary;
+		}
+	}
+}
+
+
+
+@media(min-width: 768px) {
+	footer {
+		padding: $padding--general*2 0;
+		& figure.footer-logo {
+			margin-bottom: $margin--small;
+		}
+		& p {
+			&.atm-copyright {
+				font-size: 1rem;
+				line-height: 1.6;
+				margin-bottom: 3px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.footer-layer02 {
+		margin-top: 70px;
+	}
+}
+
+.mol__unit-whoweare {
+	& p {
+		font-size: 2rem;
+		line-height: 1.4;
+		color: $color--white;
+		letter-spacing: 0.01em;
+		padding-right: $padding--general*2;
+	}
+}
+
+.mol__unit-contact {
+	margin-bottom: $margin--small*3;
+	color: $color--white;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	& span {
+		font-size: 1.2rem;
+	}
+}

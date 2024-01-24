@@ -1,0 +1,245 @@
+$bp--small: 576px; // navbar-expand-sm
+$bp--medium: 768px; // navbar-expand-md
+$bp--large: 992px; // navbar-expand-lg
+$bp--xlarge: 1200px; // navbar-expand-xl
+
+// Set breakpoint for navigation from header.php e.g.
+$breakpoint--navigation: $bp--medium;
+
+nav a {
+	@include headingUC;
+	color: $color--white;
+	&:link {
+		color: $color--white;
+	}
+	&:visited {
+		color: $color--white;
+	}
+	&:hover {
+		color: $color--secondary;
+	}
+	&:active {
+		color: $color--white;
+	}
+	&:disabled {
+		color: rgba($color--white, 0.3);
+	}
+}
+
+nav {
+	padding: $padding--small 0;
+	& h1, h1 a.navbar-brand {
+		@include brand--font-sans-medium;
+		@include navigationUC; // Can we extend this 
+		font-size: 1rem;
+		color: $color--white;
+		margin-bottom: 0;
+	}
+	& h1 a.navbar-brand:hover {
+		color: $color--secondary;
+	}
+	& a, .nav-link {
+		@include navigationUC; // Can we extend this 
+		font-size: 1rem;
+		color: $color--white;
+		&:link {
+			color: $color--white;
+		}
+		&:visited {
+			color: $color--white;
+		}
+		&:hover {
+			color: $color--secondary;
+		}
+		&:active {
+			color: $color--white;
+		}
+		&:disabled {
+			color: rgba($color--white, 0.3);
+		}
+	}
+	& li.menu-item {
+		transition: $base--transition;
+		padding: 5px 0;
+		padding-left: 10px;
+		&:hover {
+			text-decoration: none; 
+		}
+	}
+	& ul.dropdown-menu {
+		background-color: $color--primary; 
+		color: $color--white;
+		box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+		& li.menu-item {
+			padding-left: 0;
+			& a.dropdown-item {
+				color: $color--white;
+				padding: 7px 14px;
+				text-decoration: none;
+				&:visited {
+					color: $color--white;
+				}
+				&.active {
+					background-color: $color--secondary; 
+					color: $color--white;
+					&:hover {
+						background-color: $color--secondary; 
+						color: $color--white;
+					}
+				}
+				&:hover {
+					background-color: $color--tertiary-green01; 
+					color: $color--secondary; 
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	background-color: $color--secondary;
+}
+
+
+// focus, active...etc. 
+.navbar button.atmButtonNav {
+	background-color: rgba(255,255,255,0.06);
+	border: 2px solid rgba(255,255,255,0.12);
+	& i {
+		color: $color--white;
+	} 
+	&:hover {
+		color: $color--secondary;
+		cursor: url('../images/tennis-ball-solid.png'), url('../assets/images/tennis-ball-solid.svg'), pointer;	
+	}
+}
+
+// All the above needs to be converted to the below. What is small -> medium,  what is medium -> x-large.
+// Menu -> Medium: mobile version (off canvas)
+@media (max-width: $breakpoint--navigation - 1px){
+	.offcanvas.offcanvas-end {
+		backdrop-filter: blur(7px);
+		background-color: rgba($color--primary, 0.8);
+		color: $color--white;
+		& h2 {
+			color: white;
+		}
+		& .offcanvas-header {
+			padding-top: 60px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		& .offcanvas-body {
+			padding: 0;
+		}
+		& li.menu-item {
+			transition: $base--transition;
+			padding: 10px 0;
+			padding-left: 30px;
+			border-left: 7px solid darken($color--primary, 5%);
+			background-color: rgba(0,0,0,0.2);
+			&:hover {
+				background-color: rgba(0,0,0,0.5);
+				border-left: 7px solid $color--secondary;
+			}
+		}
+		& li.current-menu-item {
+			transition: $base--transition;
+			background-color: rgba($color--primary, 0.8);
+			border-left: 7px solid $color--secondary;
+			&:hover {
+				color: $color--secondary;
+				background-color: rgba($color--primary, 0.8);
+			}
+		}
+		& .offcanvas-header button.btn-close {
+			opacity: unset;
+			background-color: rgba(255,255,255,0.06);
+			border: 2px solid rgba(255,255,255,0.12);
+			cursor: url('../images/tennis-ball-solid.png'), url('../assets/images/tennis-ball-solid.svg'), pointer;	
+			& i {
+				color: rgba($color--white,0.5);
+				&:hover {
+					color: $color--white;
+				}
+			}
+		}
+	}
+}
+
+.custom-toggler.navbar-toggler {
+	border-width: 2px;
+ 	border-color: rgba(255,255,255,0.1)!important;
+ 	& .navbar-toggler-icon {
+ 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(57,255,20, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ 	}
+} 
+
+
+// Medium -> max menu: normal menu-item
+@media (min-width: $breakpoint--navigation){
+	.offcanvas.offcanvas-end {
+		backdrop-filter: unset;
+		background-color: unset;
+		& li.current-menu-item a, li.current-menu-item:hover a {
+			color: $color--secondary;
+		}
+	}
+}
+
+
+
+/*
+ .navbar-toggler-icon {
+	background-image: none!important;
+	background-color: red;
+	height: 3px;
+	width: 25px;
+	margin: 10px 0;
+	position: relative;
+	transition: all 0.35s ease-out;
+	transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+	display: block;
+	background-color: red;
+	height: 3px;
+	content: "";
+	position: relative;
+	top: -7px;
+	transition: all 0.15s ease-out; // taken down to hide quicker
+	transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+	display: block;
+	background-color: red;
+	height: 3px;
+	content: "";
+	position: relative;
+	top: 4px;
+	transition: all 0.35s ease-out;
+	transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+ 	background-color: red;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+ 	transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+ 	opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+ 	transform: rotate(-90deg) translateX(7px);
+}
+*/
+

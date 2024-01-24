@@ -1,0 +1,70 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$color--primary: #395659; // Green Background
+$color--secondary: #39FF14; // Neon Green
+
+$color--white: #fff; // white
+$color--black: #000; // black
+
+// (5 colours: in order of appearance)
+$color--tertiary-green01: $color--black; // Green - Shade 01 (black)
+$color--tertiary-green02: #226634; // 02 Green - Shade 02
+$color--tertiary-green03: #22AA67; // 03 Green - Shade 03
+$color--tertiary-green04: #EEEEBA; // 04 Green - Shade 04
+$color--tertiary-green05: #77BB78; // 05 Green - Shade 05 
+
+$base--transition: 0.3s;
+
+$base-value: 1rem; // To test: rems/ems/px
+
+$margin--small: $base-value;
+$margin--general: $base-value*2;
+$padding--small: $base-value;
+$padding--general: $base-value*2;
+
+// Age-group pill
+$pill--yellow: rgb(255,211,0);
+$pill--green: rgb(118,118,33);
+$pill--orange: rgb(243,112,33);
+$pill--red: rgb(210,35,42);
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@mixin brand--font-slab-bold {
+	font-family: mislab-std, serif;
+	font-style: italic;
+	font-weight: 700; 
+}
+
+@mixin brand--font-slab-xbold {
+	font-family: mislab-std, serif;
+	font-style: italic;
+	font-weight: 800;
+}
+
+@mixin brand--font-sans-medium {
+	font-family: roboto, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+@mixin brand--font-sans-bold {
+	font-family: roboto, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+/* Initial sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*  NOTE. html is set to 62.5% so that all the REM measurements throughout Skeleton are based on 10px sizing. So basically 1.5rem = 15px */
+/*  NOTE. If normal, 100% equals 16px sizing. */
+html {
+    font-size: 100%; 
+}
+
+body {
+	@include brand--font-sans-medium;
+	color: $color--primary;
+	font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
+}

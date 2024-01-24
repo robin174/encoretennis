@@ -1,0 +1,156 @@
+// Add typography from https://simplecss.org/
+// Add font
+
+h1, h2, h3, h4, h5, h6 {
+	@include brand--font-slab-xbold;
+	color: $color--white;
+}
+
+h1 {
+	&.type--brand {
+		font-size: 2.4rem;
+		letter-spacing: 0.033em;
+		margin-bottom: $margin--small;
+	}
+	&.type--brand-page {
+		font-size: 2.4rem;
+		letter-spacing: 0.033em;
+		margin-bottom: $margin--small;
+	}
+	&.location--small {
+		font-size: 2rem;
+		letter-spacing: 0.033em;
+		margin-bottom: $margin--small;
+	}
+}
+
+h2 {
+	@include brand--font-sans-bold;
+	font-size: 1.4rem;
+	margin-bottom: $margin--small*0.5;
+	&.type--brand {
+		font-size: 1.8rem;
+		letter-spacing: 0.1em;
+		margin-bottom: $margin--small;
+	}
+}
+
+h3 {
+	font-size: 1.2rem;
+	&.type--brand {
+		font-size: 3rem;
+		letter-spacing: 0.08em;
+		margin-bottom: 0;
+	}
+	&.font--subheading {
+		font-size:2.2rem;
+		letter-spacing: 0.02em;
+		@include brand--font-slab-bold;
+		color: $color--secondary;
+	}
+	&.type--team {
+		line-height: 1;
+		font-size: 1.8rem;
+		letter-spacing: 0.08em;
+		margin-bottom: 7px;
+	} 
+	&.type--brand-page {
+		font-size: 1.8rem;
+		letter-spacing: 0.05em;
+	}
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+
+// body class-based theme for 'community-tennis'
+// Might be a case of setting the theme elsewhere
+body {
+	& a {
+		transition: $base--transition;
+		color: $color--white;
+		&:hover {
+			color: $color--secondary;
+		}
+	}
+	& p {
+		@include brand--font-sans-medium;
+		font-size: 1.5rem;
+		margin-bottom: $margin--general;
+		& a {
+			color: $color--secondary;
+			&:hover {
+				color: $color--white;
+			}
+		}
+	}
+}
+
+
+
+.ut--uc {
+	@include headingUC;
+}
+
+.ut--green {
+	color: $color--secondary;
+	& a {
+		color: $color--secondary;
+		&:hover {
+			color: $color--white;
+		}
+	}
+}
+
+.text--shadow {
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+ul.team--questions {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	& li {
+		margin: 0;
+		margin-bottom: 2px;
+		padding: 0;
+		font-size: 1.25rem;
+		letter-spacing: 0.03em;
+	}
+}
+
+@media(min-width: 768px) {
+	h1 {
+		&.type--brand {
+			font-size: 5rem;
+		}
+		&.location--small {
+			font-size: 3.4rem;
+		}
+		&.type--brand-page {
+			font-size: 4.8rem;
+		}
+	}
+	h2 {
+		font-size: 1.8rem;
+		&.type--brand {
+			font-size: 3rem;
+		}
+	}
+	p {
+		font-size: 1.3rem;
+		margin-bottom: $margin--general*0.5;
+		&:last-child {
+			margin-bottom: $margin--general*1.4;
+		}
+	}
+}
+
+p.emph {
+	color: rgba($color--white, 0.5);
+	& i {
+		margin-right: 10px;
+	}
+}
