@@ -1,7 +1,7 @@
 <section class="mol--section-team text-center">
 	<div class="atm--headshot">
 		<?php if ( has_post_thumbnail() ) { ?>
-            <figure>
+            <figure class="text-center">
 				<?php the_post_thumbnail('thumbnail');?>
 			</figure>
         <?php } else { ?>

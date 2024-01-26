@@ -22,7 +22,7 @@ get_header(); ?>
 		<!-- Bespoke Content -->
 		<?php if(is_page('team')) : ?>
 			<div class="container">
-				<div class="row justify-content-center">
+				<div class="row g-5 justify-content-center">
 						<?php
 				            $args=array(
 				 				'post_type' => 'team',
@@ -44,7 +44,7 @@ get_header(); ?>
 		<?php elseif(is_page('competitions')) : ?>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-12 col-md-8">
+					<div class="col-12 col-md-10 col-xl-8">
 
 						<section class="org--section-events">
 	                        <section class="mol--section-events-upcoming">

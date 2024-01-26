@@ -453,20 +453,36 @@
       "oAP" : "\/misc\/page-community.php",
       "oF" : 0
     },
+    "\/misc\/single-comp.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/misc\/single-comp.php",
+      "oF" : 0
+    },
+    "\/misc\/single-competition.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/misc\/single-competition.php",
+      "oF" : 0
+    },
+    "\/misc\/single-team.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/misc\/single-team.php",
+      "oF" : 0
+    },
     "\/page-builder.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-builder.php",
-      "oF" : 0
-    },
-    "\/page-competitions.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-competitions.php",
       "oF" : 0
     },
     "\/page-home.php" : {
@@ -506,36 +522,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/single-comp.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-comp.php",
-      "oF" : 0
-    },
-    "\/single-competition.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-competition.php",
-      "oF" : 0
-    },
     "\/single-locations.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/single-locations.php",
-      "oF" : 0
-    },
-    "\/single-team.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-team.php",
       "oF" : 0
     },
     "\/single.php" : {
@@ -624,14 +616,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/unit-comp-upcoming.php",
-      "oF" : 0
-    },
-    "\/template-parts\/unit-header.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/template-parts\/unit-header.php",
       "oF" : 0
     },
     "\/template-parts\/unit-introduction.php" : {

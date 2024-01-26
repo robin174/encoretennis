@@ -15,6 +15,10 @@ get_header(); ?>
 				<div class="col-12 col-md-12">
 					<div class="text-center">
 
+						<div>
+							<h1 class="type--brand-page"><?php the_title(); ?></h1>
+						</div>
+
 						<section>
 							<?php if(get_field('location_teamup') === 'embedhurst') : ?>
 								<?php get_template_part('template-parts/unit-teamup-hurst'); ?>

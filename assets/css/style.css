@@ -162,13 +162,13 @@ ul.team--questions li {
 
 @media (min-width: 768px) {
   h1.type--brand {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   h1.location--small {
     font-size: 3.4rem;
   }
   h1.type--brand-page {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   h2 {
     font-size: 1.8rem;
@@ -562,8 +562,8 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
 .mol--section-team:last-child {
   margin-bottom: 0;
 }
-.mol--section-team .atm--details {
-  margin-left: 2rem;
+.mol--section-team .atm--headshot {
+  margin-bottom: 40px;
 }
 
 section.org--section-events h4.ut--holiday {
