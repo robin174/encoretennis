@@ -37,11 +37,11 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/assets\/images\/encore-tennis-logo-notype1.png" : {
+    "\/assets\/images\/encore-tennis-logo-notype1a.png" : {
       "ft" : 32768,
       "iS" : 459714,
       "oA" : 0,
-      "oAP" : "\/assets\/images\/encore-tennis-logo-notype1.png",
+      "oAP" : "\/assets\/images\/encore-tennis-logo-notype1a.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -50,11 +50,37 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/assets\/images\/encore-tennis-logo-notype2.png" : {
+    "\/assets\/images\/encore-tennis-logo-notype1b.png" : {
+      "ft" : 32768,
+      "iS" : 10823,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/encore-tennis-logo-notype1b.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/encore-tennis-logo-notype2a.png" : {
       "ft" : 32768,
       "iS" : 402144,
       "oA" : 0,
-      "oAP" : "\/assets\/images\/encore-tennis-logo-notype2.png",
+      "oAP" : "\/assets\/images\/encore-tennis-logo-notype2a.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/encore-tennis-logo-notype2b.png" : {
+      "ft" : 32768,
+      "iS" : 12420,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/encore-tennis-logo-notype2b.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

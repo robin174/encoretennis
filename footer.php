@@ -12,9 +12,9 @@
 	                	<div class="col-12 col-md-6">
 	                		<figure class="footer-logo">
 	                			<?php if(is_page('Encore Tennis')) : ?>
-	                				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/encore-tennis-logo-notype1.png"/>
+	                				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/encore-tennis-logo-notype2b.png"/>
 	                			<?php else : ?>
-									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/encore-tennis-logo-notype1.png"/></a>
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/encore-tennis-logo-notype2b.png"/></a>
 								<?php endif; ?>
 							</figure>
 	                	</div>
