@@ -109,6 +109,29 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/images\/tennis-racket-solid.png" : {
+      "ft" : 32768,
+      "iS" : 459,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/tennis-racket-solid.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/tennis-racket-solid.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/images\/tennis-racket-solid.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/images\/use-tennis-point-wh.png" : {
       "ft" : 32768,
       "iS" : 6803,
