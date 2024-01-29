@@ -12,6 +12,6 @@
 	</div>
 	<div class="atm--details">
 		<h3 class="type--team"><?php the_title(); ?></h3>
-		<p>Nam eget pulvinar quam. Cras varius eros eu ex accumsan facilisis. Ut a condimentum diam. Cras porttitor arcu sapien. In condimentum urna vitae nisi scelerisque, id pretium lorem tincidunt.</p>
+		<p><?php the_field('team_description');?></p>
 	</div>
 </section>
