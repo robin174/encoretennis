@@ -18,7 +18,7 @@
 	<h6><i class="fa-solid fa-location-dot"></i>&nbsp;
 		<?php if(get_field('location_select') == 'Other') { ?>
 			<?php the_field('other_location'); ?>
-		<?php } elseif(get_field('location_select') == 'Hurstpierpoint' || 'Queens Park' ) { ?>
+		<?php } elseif(get_field('location_select') == 'hurstpierpoint' || 'queenspark'  || 'stanns' || 'buckinghampark'  ) { ?>
 			<?php the_field('location_select'); ?>
 		<?php } ?>
 		<span>|</span><i class="fa-solid fa-trophy"></i>&nbsp;<?php the_field('tournament_select'); ?></h6>
