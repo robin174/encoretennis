@@ -409,21 +409,25 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
     transition: 0.3s;
     padding: 10px 0;
     padding-left: 30px;
-    border-left: 7px solid #2f4749;
-    background-color: rgba(0, 0, 0, 0.2);
   }
   .offcanvas.offcanvas-end li.menu-item:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    border-left: 7px solid #39FF14;
+  }
+  .offcanvas.offcanvas-end li.menu-item:hover a {
+    color: #39FF14;
   }
   .offcanvas.offcanvas-end li.current-menu-item {
     transition: 0.3s;
-    background-color: rgba(57, 86, 89, 0.8);
-    border-left: 7px solid #39FF14;
+    background-color: #000;
+  }
+  .offcanvas.offcanvas-end li.current-menu-item a {
+    color: #39FF14;
   }
   .offcanvas.offcanvas-end li.current-menu-item:hover {
+    background-color: #000;
+  }
+  .offcanvas.offcanvas-end li.current-menu-item:hover a {
     color: #39FF14;
-    background-color: rgba(57, 86, 89, 0.8);
   }
   .offcanvas.offcanvas-end .offcanvas-header button.btn-close {
     opacity: unset;
@@ -436,6 +440,23 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
   }
   .offcanvas.offcanvas-end .offcanvas-header button.btn-close i:hover {
     color: #fff;
+  }
+  .offcanvas.offcanvas-end ul.dropdown-menu.depth_0 {
+    padding: 0;
+  }
+  .offcanvas.offcanvas-end ul.dropdown-menu.depth_0 li {
+    padding: 10px;
+    margin: 0;
+  }
+  .offcanvas.offcanvas-end ul.dropdown-menu.depth_0 li:hover {
+    background-color: #000;
+  }
+  .offcanvas.offcanvas-end ul.dropdown-menu.depth_0 li:hover a {
+    background-color: unset;
+    color: #39FF14;
+  }
+  .offcanvas.offcanvas-end ul.dropdown-menu.depth_0 li:hover a:hover {
+    background-color: unset;
   }
 }
 .custom-toggler.navbar-toggler {
