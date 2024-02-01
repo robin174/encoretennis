@@ -37,10 +37,7 @@
 											<li><a href="mailto:<?php the_field('et_email', 'option');?>"><?php the_field('et_email', 'option');?></a></li>
 											<li>07966 210 692</li>
 											<li>Encore Tennis<br/>
-												Address 01<br>
-												Address 02<br>
-												Town<br>
-												Postcode</li>
+												<?php the_field('et_address', 'option'); ?></li>
 										</ul>
 									</div>
 								</div>
