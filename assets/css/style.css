@@ -262,9 +262,14 @@ figure {
   margin: 0;
   padding: 0;
 }
+figure.headshot img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 figure.headshot-logo img {
+  height: 200px;
   opacity: 0.1;
-  height: 150px;
 }
 
 header {

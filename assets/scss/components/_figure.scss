@@ -1,11 +1,18 @@
 figure {
 	margin: 0;
 	padding: 0;
+	&.headshot {
+		& img {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+	}
 	&.headshot-logo {
 		& img {
+			height: 200px;
 			opacity: 0.1;
 			//border: 1px solid rgba(255,255,255,0.5);
-			height: 150px;
 		}
 	}
 }
