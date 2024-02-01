@@ -71,8 +71,7 @@ if ( ! function_exists( 'encoretennis_setup' ) ) :
 	function encoretennis_setup() {
 
     register_nav_menus( array(
-        'primary' => __( 'Primary Menu', 'encoretennis' ),
-        'footer'  => __( 'Footer Menu', 'encoretennis' ),
+        'mobile' => __( 'Mobile Menu', 'encoretennis' ),
     ) );
 
     add_theme_support( 'post-thumbnails' );
