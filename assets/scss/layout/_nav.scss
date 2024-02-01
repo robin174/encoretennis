@@ -126,9 +126,9 @@ nav {
 			color: white;
 		}
 		& .offcanvas-header {
-			padding-top: 60px;
-			padding-left: 30px;
-			padding-right: 30px;
+			padding-top: $padding--general;
+			padding-left: $padding--general;
+			padding-right: $padding--general;
 		}
 		& .offcanvas-body {
 			padding: 0;
@@ -198,8 +198,13 @@ nav {
  	& .navbar-toggler-icon {
  		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(57,255,20, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
  	}
-} 
+}
 
+.btn-close {
+	width: 2rem;
+    height: 2rem;
+	background: unset!important;
+}
 
 // Medium -> max menu: normal menu-item
 @media (min-width: $breakpoint--navigation){
