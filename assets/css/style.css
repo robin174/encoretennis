@@ -584,7 +584,7 @@ section.mol--section-event {
   margin-bottom: 1rem;
 }
 section.mol--section-event:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 section.mol--section-event:last-child {
   margin-bottom: 0;
