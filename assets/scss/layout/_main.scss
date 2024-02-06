@@ -50,7 +50,12 @@
 	}
 }
 
-.mol-page-separator {
+.mol--page-separator {
+	background-color: darken($color--primary,3%);
+	// min-height: 600px;
+}
+
+.mol--page-splide {
 	background-color: darken($color--primary,3%);
 	// min-height: 600px;
 }

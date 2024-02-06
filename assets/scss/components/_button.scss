@@ -60,3 +60,27 @@ a.atm--button-signup {
 		background-color: rgba($color--white, 0.1);
 	}
 }
+
+input.email {
+	padding-left: 10px;
+}
+
+input[type=submit] {
+	@include brand--font-slab-bold;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1;
+	background-color: $color--secondary;
+	color: $color--black;
+	padding: 0 $padding--general;
+	padding-top: 8px;
+	padding-bottom:9px;
+	text-decoration: none;
+	border-radius: 5px;
+	
+	&:hover {
+		cursor: pointer !important;
+		transition: $base--transition;
+		background-color: rgba($color--white, 0.1);
+	}
+}

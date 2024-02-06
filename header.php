@@ -29,17 +29,20 @@
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Roboto&display=swap" rel="stylesheet">
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+		<!-- Slider: Splide
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/js/splide/css/splide.min.css">
+
 		<!-- Font: Adobe
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="stylesheet" href="https://use.typekit.net/vbu2owy.css">
 
-		<!-- Font: Icon (Boom Tennis Account)
+		<!-- Font: Icon
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script src="https://kit.fontawesome.com/d256b19c43.js" crossorigin="anonymous"></script>
 
 		<!-- Google tag (gtag.js) -->
-		<!-- TODO: to add -->
-    
+ 
 		<?php wp_head(); ?>
 	</head>
 

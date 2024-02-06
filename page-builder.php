@@ -84,8 +84,8 @@ get_header(); ?>
 </section>
 
 <?php if(get_field('add_image')) { ?>
-	<section class="mol-page-separator">
-		<div class="container-fluid" style="padding:0;">
+	<section class="mol--page-separator">
+		<div class="container" style="padding:0;">
 			<div class="row justify-content-center g-0">
 				<div class="col-12">
 					<figure class="text-center">

@@ -171,6 +171,77 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/assets\/js\/splide\/css\/splide-core.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/splide\/css\/splide-core.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/js\/splide\/css\/splide.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/splide\/css\/splide.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/js\/splide\/css\/themes\/splide-default.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/splide\/css\/themes\/splide-default.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/js\/splide\/css\/themes\/splide-sea-green.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/splide\/css\/themes\/splide-sea-green.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/js\/splide\/css\/themes\/splide-skyblue.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/splide\/css\/themes\/splide-skyblue.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/js\/splide\/splide.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/splide\/splide.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/scss\/base\/_all.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -494,14 +565,6 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
-    "\/misc\/page-community.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/misc\/page-community.php",
-      "oF" : 0
-    },
     "\/misc\/single-comp.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -532,6 +595,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-builder.php",
+      "oF" : 0
+    },
+    "\/page-experiment.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-experiment.php",
       "oF" : 0
     },
     "\/page-home.php" : {
@@ -705,6 +776,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/unit-page-header.php",
+      "oF" : 0
+    },
+    "\/template-parts\/unit-splide-gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/unit-splide-gallery.php",
       "oF" : 0
     },
     "\/template-parts\/unit-team.php" : {
