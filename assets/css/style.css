@@ -299,6 +299,18 @@ figure.headshot-logo img {
   height: 200px;
   opacity: 0.1;
 }
+figure.loc {
+  margin-bottom: 2rem;
+}
+figure.loc img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+figure.loc-logo img {
+  height: 200px;
+  opacity: 0.1;
+}
 
 header {
   background-color: #395659;

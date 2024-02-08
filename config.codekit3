@@ -762,6 +762,14 @@
       "oAP" : "\/template-parts\/unit-lines-thin.php",
       "oF" : 0
     },
+    "\/template-parts\/unit-location.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/unit-location.php",
+      "oF" : 0
+    },
     "\/template-parts\/unit-newsletter.php" : {
       "cB" : 0,
       "ft" : 8192,

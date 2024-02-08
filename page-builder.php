@@ -78,11 +78,38 @@ get_header(); ?>
 		<?php elseif(is_page('policies')) : ?>
 			<?php get_template_part('template-parts/unit-pdf'); ?>
 		<?php elseif(is_page('how-to-find-us')) : ?>
-			<h2>How to find us</h2>
+			<div class="container">
+				<div class="row g-5 justify-content-center">
+					
+						<?php
+				            $args=array(
+				 				'post_type' => 'locations',
+								'post_status' => 'publish',
+								'order' => 'DESC',
+				            );
+				            $my_query = null;
+				            $my_query = new WP_Query($args);
+				            if( $my_query->have_posts() ) {
+				            	while ($my_query->have_posts()) : $my_query->the_post(); ?>
+				            		<div class="col-12 col-md-6 col-xl-4">
+										<?php get_template_part('template-parts/unit-location'); ?>
+									</div>
+								<?php endwhile; }
+        					wp_reset_query(); ?>
+					</div>
+				</div>
+			</div>
 		<?php endif; ?>
 
 	</section>
 </section>
+
+<?php if(is_page('how-to-find-us')) : ?>
+	<div class="mol--google-map">
+    	<div id="map" style="height: 630px; width: 100%;"></div>
+	</div>
+<?php endif; ?>
+
 
 <?php if(get_field('add_image')) { ?>
 	<section class="mol--page-separator">
