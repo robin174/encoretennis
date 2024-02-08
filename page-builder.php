@@ -23,7 +23,7 @@ get_header(); ?>
 		<?php if(is_page('team')) : ?>
 			<div class="container">
 				<div class="row g-5 justify-content-center">
-					<div class="col-12 col-md-10 col-xl-8">
+					<div class="col-12 col-md-10 col-xl-9">
 						<?php
 				            $args=array(
 				 				'post_type' => 'team',
