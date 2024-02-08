@@ -638,7 +638,7 @@ section.mol--section-event p {
 }
 
 span.atm--pill-yellow {
-  background-color: #ffe31a;
+  background-color: rgb(255, 211, 0);
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
@@ -653,7 +653,7 @@ span.atm--pill-yellow {
 }
 
 span.atm--pill-green {
-  background-color: #19b228;
+  background-color: rgb(141, 187, 56);
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
@@ -668,7 +668,7 @@ span.atm--pill-green {
 }
 
 span.atm--pill-orange {
-  background-color: #f74c16;
+  background-color: rgb(243, 112, 33);
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
@@ -683,7 +683,7 @@ span.atm--pill-orange {
 }
 
 span.atm--pill-red {
-  background-color: #ed1c24;
+  background-color: rgb(210, 35, 42);
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
