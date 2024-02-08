@@ -583,6 +583,10 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
   background-color: #334d50;
 }
 
+.mol--google-map {
+  background-color: #334d50;
+}
+
 .mol--section-team {
   margin-bottom: 4rem;
 }
