@@ -85,7 +85,7 @@ get_header(); ?>
 				            $args=array(
 				 				'post_type' => 'locations',
 								'post_status' => 'publish',
-								'order' => 'DESC',
+								'order' => 'ASC',
 				            );
 				            $my_query = null;
 				            $my_query = new WP_Query($args);
