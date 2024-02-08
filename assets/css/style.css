@@ -93,6 +93,7 @@ h3.font--subheading {
   color: #39FF14;
 }
 h3.type--team {
+  color: #39FF14;
   line-height: 1;
   font-size: 1.8rem;
   letter-spacing: 0.08em;
@@ -287,10 +288,12 @@ figure {
   margin: 0;
   padding: 0;
 }
+figure.headshot {
+  margin-right: 2rem;
+}
 figure.headshot img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
 }
 figure.headshot-logo img {
   height: 200px;
@@ -577,6 +580,9 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
 .mol--section-team .atm--headshot {
   margin-bottom: 40px;
 }
+.mol--section-team.ut--green {
+  color: #39FF14;
+}
 
 section.org--section-events h4.ut--holiday {
   text-align: center;
@@ -632,7 +638,7 @@ section.mol--section-event p {
 }
 
 span.atm--pill-yellow {
-  background-color: rgb(255, 211, 0);
+  background-color: #ffe31a;
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
@@ -647,7 +653,7 @@ span.atm--pill-yellow {
 }
 
 span.atm--pill-green {
-  background-color: rgb(118, 118, 33);
+  background-color: #19b228;
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
@@ -662,7 +668,7 @@ span.atm--pill-green {
 }
 
 span.atm--pill-orange {
-  background-color: rgb(243, 112, 33);
+  background-color: #f74c16;
   width: max-content;
   color: #fff;
   font-size: 0.7rem;
@@ -677,7 +683,7 @@ span.atm--pill-orange {
 }
 
 span.atm--pill-red {
-  background-color: rgb(210, 35, 42);
+  background-color: #ed1c24;
   width: max-content;
   color: #fff;
   font-size: 0.7rem;

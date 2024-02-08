@@ -23,21 +23,20 @@ get_header(); ?>
 		<?php if(is_page('team')) : ?>
 			<div class="container">
 				<div class="row g-5 justify-content-center">
+					<div class="col-12 col-md-10 col-xl-8">
 						<?php
 				            $args=array(
 				 				'post_type' => 'team',
 								'post_status' => 'publish',
-								'order' => 'ASC',
+								'order' => 'DESC',
 				            );
 				            $my_query = null;
 				            $my_query = new WP_Query($args);
 				            if( $my_query->have_posts() ) {
 				            	while ($my_query->have_posts()) : $my_query->the_post(); ?>
-				            		<div class="col-12 col-md-4">
-										<?php get_template_part('template-parts/unit-team'); ?>
-									</div>
+									<?php get_template_part('template-parts/unit-team'); ?>
 								<?php endwhile; }
-        						wp_reset_query(); ?>
+        					wp_reset_query(); ?>
 	                </div>
 	            </div>
 	        </div>

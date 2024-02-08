@@ -68,6 +68,10 @@
 	& .atm--headshot {
 		margin-bottom: 40px;
 	}
+
+	&.ut--green {
+		color: $color--secondary;
+	}
 }
 
 section.org--section-events {
