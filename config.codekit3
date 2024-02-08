@@ -778,6 +778,14 @@
       "oAP" : "\/template-parts\/unit-page-header.php",
       "oF" : 0
     },
+    "\/template-parts\/unit-pdf.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/unit-pdf.php",
+      "oF" : 0
+    },
     "\/template-parts\/unit-splide-gallery.php" : {
       "cB" : 0,
       "ft" : 8192,

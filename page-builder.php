@@ -76,6 +76,8 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+		<?php elseif(is_page('policies')) : ?>
+			<?php get_template_part('template-parts/unit-pdf'); ?>
 		<?php elseif(is_page('how-to-find-us')) : ?>
 			<h2>How to find us</h2>
 		<?php endif; ?>
