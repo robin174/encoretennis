@@ -535,6 +535,25 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
   height: 200px;
 }
 
+.splide__arrow {
+  transition: 0.3s;
+  opacity: 1;
+  background-color: #39FF14;
+  color: #000;
+  cursor: pointer;
+}
+.splide__arrow:hover {
+  background-color: #1bad00;
+}
+
+.splide__pagination__page {
+  background: #000;
+  opacity: 1;
+}
+.splide__pagination__page.is-active {
+  background: #39FF14;
+}
+
 .thin {
   height: 20px;
 }

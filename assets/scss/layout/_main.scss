@@ -11,6 +11,26 @@
 	}
 }
 
+.splide__arrow {
+	transition: $base--transition;
+	opacity: 1;
+	background-color: $color--secondary;
+	color: $color--black;
+	cursor: pointer;
+	&:hover {
+		background-color: darken($color--secondary,20%);
+	}
+}
+
+.splide__pagination__page {
+	background: $color--black;
+	opacity: 1;
+	&.is-active {
+		background: $color--secondary;
+	}
+}
+
+
 // ET: Footer lines
 .thin {
 	height: 20px;
