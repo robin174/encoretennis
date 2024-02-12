@@ -23,12 +23,6 @@
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" />	
 
-		<!-- Font: Google
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Roboto&display=swap" rel="stylesheet">
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 		<!-- Slider: Splide
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/js/splide/css/splide.min.css">
@@ -40,11 +34,6 @@
 		<!-- Font: Icon
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script src="https://kit.fontawesome.com/d256b19c43.js" crossorigin="anonymous"></script>
-
-		<!-- The callback parameter is required, so we use console.debug as a noop -->
-		<!--
-    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC23mG6_0iLjkGf8GMpVfz3sF3OFzodgc&callback=initMap" async defer></script>
-    -->
 
     	<script>
 		  (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
@@ -83,6 +72,14 @@
     	</script>
 
 		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FY097S4Z0X"></script>
+		<script>
+		 	window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-FY097S4Z0X');
+		</script>
  
 		<?php wp_head(); ?>
 	</head>
