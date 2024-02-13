@@ -10,7 +10,7 @@
 								<i class="fa-sharp fa-3x fa-file-pdf"></i>
 							</div>
 							<div>
-								<h4><?php the_sub_field('pdf_repeater_title'); ?></h4>
+								<h4 class="atm--policies"><?php the_sub_field('pdf_repeater_title'); ?></h4>
 								<p><?php the_sub_field('pdf_repeater_desc'); ?></p>
 								<?php if (get_sub_field('pdf_repeater_file')): ?>
 									<div class="d-flex">

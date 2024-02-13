@@ -10,7 +10,7 @@
 				<section class="footer-layer01">
 	                <div class="row">
 	                	<div class="col-12 col-md-6">
-	                		<figure class="footer-logo">
+	                		<figure class="footer-logo text-center text-md-start">
 	                			<?php if(is_page('Encore Tennis')) : ?>
 	                				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/encore-tennis-logo-notype2b.png"/>
 	                			<?php else : ?>

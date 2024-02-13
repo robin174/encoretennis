@@ -61,6 +61,13 @@ h3 {
 	}
 }
 
+h4 {
+	&.atm--policies {
+		@include brand--font-slab-bold;
+		letter-spacing: 0.05em;
+	}
+}
+
 h5 {
 	font-size: 0.9rem;
 }
