@@ -40,9 +40,11 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<?php /*
 		<section class="mol--page-splide">
 			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
 		</section>
+		*/ ?>
 
 		<?php if(get_field('footer_style') == 'thinlines') { ?>
 			<?php get_template_part('template-parts/unit-lines-thin'); ?>
