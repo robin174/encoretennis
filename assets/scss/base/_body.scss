@@ -22,7 +22,9 @@ a {
 
 @media (min-width: 992px) { 
 	body {
-		& a:hover {
+		& a:hover, 
+		& button:hover, 
+		& video:hover {
 			cursor: url('../images/tennis-racket-solid.png'), url('../images/tennis-racket-solid.svg'), pointer;	
 		}
 	}
