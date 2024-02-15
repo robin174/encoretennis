@@ -37,20 +37,44 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/assets\/images\/ENCORE LINES_FAT_2.mp4" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/ENCORE LINES_FAT_2.mp4",
-      "oF" : 0
-    },
     "\/assets\/images\/ENCORE LINES_FAT_4.mp4" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/ENCORE LINES_FAT_4.mp4",
+      "oF" : 0
+    },
+    "\/assets\/images\/ENCORE-LINES-1300-750-test.mov" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750-test.mov",
+      "oF" : 0
+    },
+    "\/assets\/images\/ENCORE-LINES-1300-750.mov" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750.mov",
+      "oF" : 0
+    },
+    "\/assets\/images\/ENCORE-LINES-1300-750.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750.mp4",
+      "oF" : 0
+    },
+    "\/assets\/images\/ENCORE-LINES-1300-750.webm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750.webm",
       "oF" : 0
     },
     "\/assets\/images\/encore-tennis-logo-notype2a.png" : {
@@ -101,45 +125,6 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
-    },
-    "\/assets\/images\/Screenshot 2024-02-13 at 09.39.43.png" : {
-      "ft" : 32768,
-      "iS" : 1520,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/Screenshot 2024-02-13 at 09.39.43.png",
-      "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/assets\/images\/Screenshot 2024-02-13 at 10.13.14.png" : {
-      "ft" : 32768,
-      "iS" : 1699,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/Screenshot 2024-02-13 at 10.13.14.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/assets\/images\/Screenshot 2024-02-13 at 10.57.31.png" : {
-      "ft" : 32768,
-      "iS" : 1308,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/Screenshot 2024-02-13 at 10.57.31.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
     },
     "\/assets\/images\/Screenshot 2024-02-13 at 10.58.36.png" : {
       "ft" : 32768,

@@ -40,94 +40,37 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<?php /*
-		<section class="mol--page-splide" style="position: relative; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/screenshot 2024-02-13 at 09.39.43.png'); background-position: bottom; background-repeat:repeat-x">
-			<div class="container">
-				<section class="splide">
-					<div class="splide__track">
+		
 
-						<div class="" style="position: absolute; z-index:10000; top: 0; left:0;margin:0padding:0;">
-							<video width="1267" height="845" style="margin:0padding:0;" autoplay muted>
-								<source src="<?php echo get_template_directory_uri(); ?>/assets/images/ENCORE LINES_FAT_2 copy.mp4" type="video/mp4">
-							</video>
-						</div>
+		<?php /* VERSION 02 - Video, then Splide */ ?>
+		<section class="mol--page-splide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
+			<div class="container" style="position: relative;width:1300px;height:750px;">
+
+				<video id="myVideo" width="1300" height="750">
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/ENCORE LINES_FAT_4.mp4" type="video/mp4">
+				</video>
+
+				<section class="splide" id="mySplide">
+					<div class="splide__track">
 						<ul class="splide__list">
 							<?php if( have_rows('home_repeater') ): ?>
 								<?php while( have_rows('home_repeater')): the_row(); ?>
 
-									<li class="splide__slide" style="background:black;">
-										<div class="row justify-content-center">
-											<div class="col-12">
-												<figure >
-													<img class="mw-100" src="<?php the_sub_field('home_image_slide'); ?>" >
-												</figure>	
-											</div>
-										</div>
+									<li class="splide__slide">
+										<figure>
+											<img class="mw-100" src="<?php the_sub_field('home_image_slide'); ?>" >
+										</figure>
 									</li>
 
 								<?php endwhile; ?>
 							<?php endif; ?>
 						</ul>
-
 					</div>
 				</section>
-			</div>
-		</section>
-		*/ ?>
-		<div class="container">
-			<div class="row g-0">
-				<div class="col-12">
-					<div style="background: red;padding: 5px 0;width:100%;">
-						XYZ
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<section class="mol--page-splide" style="position: relative; background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png'); background-position: bottom; background-repeat:repeat-x">
-			<div class="container" style="position: relative;height:750px;">
-
-				<video width="1300" height="750" style="margin:0padding:0;" autoplay muted>
-					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/ENCORE LINES_FAT_4.mp4" type="video/mp4">
-				</video>
-
-				<div style="position: absolute; z-index: 20; top:0;opacity: 0.3;">
-					<section class="splide">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<?php if( have_rows('home_repeater') ): ?>
-									<?php while( have_rows('home_repeater')): the_row(); ?>
-
-										<li class="splide__slide" style="background:black;">
-											<div class="row justify-content-center">
-												<div class="col-10">
-													<figure >
-														<img class="mw-100" src="<?php the_sub_field('home_image_slide'); ?>" >
-													</figure>	
-												</div>
-											</div>
-										</li>
-
-									<?php endwhile; ?>
-								<?php endif; ?>
-							</ul>
-						</div>
-					</section>
-				</div>
 
 			</div>
 		</section>
-
-
-		<?php /*
-		<?php if(get_field('footer_style') == 'thinlines') { ?>
-			<?php get_template_part('template-parts/unit-lines-thin'); ?>
-		<?php } elseif(get_field('footer_style') == 'thicklines') { ?>
-			<?php get_template_part('template-parts/unit-lines-thick'); ?>
-		<?php } ?>
-		*/ ?>
-
+				
 	</section>
 
 <!-- Splide (JS)
@@ -137,9 +80,41 @@ get_header(); ?>
 	var splide = new Splide( '.splide', {
 		type: 'loop',
 		speed: 700,
+		start: 0,
 		autoplay: true,
 		perPage: 1
 	});
 	splide.mount();
+
+	const video = document.getElementById('myVideo');
+
+	// Hide Splide initially
+	//splide.root.style.display = 'none';
+	splide.root.style.visibility = 'hidden';
+	splide.root.style.opacity = 0;
+
+	// Event listener for the video element
+	video.addEventListener('click', function(event) {
+		event.preventDefault(); // Prevent any default click behavior
+
+		// Toggle play/pause based on the current state of the video
+		if (video.paused || video.ended) {
+			video.play();
+
+	    	// Set a timeout to display the Splide slider after 5 seconds
+		    	setTimeout(function() {
+		    		//splide.root.style.display = 'block';
+		      		splide.root.style.visibility = 'visible';  // Make the slider visible but fully transparent
+		      		setTimeout(function() {
+		        		splide.root.style.opacity = 1;  // Fade in the slider
+		        		//splide.root.style.visibility = 'visible';
+		      		}, 20); // Short delay before starting the fade-in
+		    	}, 2000);
+	    	
+	  	} else {
+	    	video.pause();
+	  	}
+	 });
 </script>
+
 <?php get_footer(); ?>

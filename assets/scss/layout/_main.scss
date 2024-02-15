@@ -11,6 +11,13 @@
 	}
 }
 
+.mol--page-splide {
+	position: relative; 
+	background-position: bottom; 
+	background-repeat:repeat-x;
+
+}
+
 .splide__arrow {
 	transition: $base--transition;
 	opacity: 1;
@@ -28,6 +35,28 @@
 	&.is-active {
 		background: $color--secondary;
 	}
+}
+
+#myVideo {
+	margin:0; 
+	padding:0;
+}
+
+.splide {
+	width: 1300px;
+	position: absolute; 
+	z-index: 20; 
+	top:0; 
+	transition: opacity 1.6s ease-in-out;
+}
+
+.splide__list {
+	margin:0; 
+	padding:0;
+}
+.splide__slide {
+	margin:0; 
+	padding:0;
 }
 
 
