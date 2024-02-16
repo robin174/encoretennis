@@ -7,10 +7,10 @@
 				<?php if( have_rows('home_repeater') ): ?>
 					<?php while( have_rows('home_repeater')): the_row(); ?>
 
-						<li class="splide__slide" style="background:black;">
+						<li class="splide__slide">
 							<div class="row justify-content-center">
-								<div class="col-12">
-									<figure >
+								<div class="col-11">
+									<figure>
 										<img class="mw-100" src="<?php the_sub_field('home_image_slide'); ?>" >
 									</figure>	
 								</div>
