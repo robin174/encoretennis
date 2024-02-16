@@ -43,7 +43,7 @@ get_header(); ?>
 		
 
 		<?php /* VERSION 02 - Video, then Splide */ ?>
-		<section class="mol--page-splide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
+		<section class="mol--page-splide-experiement" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
 			<div class="container" style="position: relative;width:1300px;height:750px;">
 
 				<video id="myVideo" width="1300" height="750">

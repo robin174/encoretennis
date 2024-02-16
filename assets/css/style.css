@@ -542,12 +542,6 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
   height: 200px;
 }
 
-.mol--page-splide {
-  position: relative;
-  background-position: bottom;
-  background-repeat: repeat-x;
-}
-
 .splide__arrow {
   transition: 0.3s;
   opacity: 1;
@@ -567,25 +561,28 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
   background: #39FF14;
 }
 
-#myVideo {
-  margin: 0;
-  padding: 0;
+.mol--page-splide-experiment {
+  position: relative;
+  background-position: bottom;
+  background-repeat: repeat-x;
 }
-
-.splide {
+.mol--page-splide-experiment .splide {
   width: 1300px;
   position: absolute;
   z-index: 20;
   top: 0;
   transition: opacity 1.6s ease-in-out;
 }
-
-.splide__list {
+.mol--page-splide-experiment .splide__list {
+  margin: 0;
+  padding: 0;
+}
+.mol--page-splide-experiment .splide__slide {
   margin: 0;
   padding: 0;
 }
 
-.splide__slide {
+#myVideo {
   margin: 0;
   padding: 0;
 }
