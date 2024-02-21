@@ -1,8 +1,4 @@
-<?php if(is_page('Encore Tennis')) : ?>
-	<section class="org--page-introduction" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/images/use-encoretennis-header-v1.jpg') center;">
-<?php else : ?>
-	<section class="org--page-introduction">
-<?php endif; ?>
+<section class="org--page-introduction" style="background:url('<?php echo get_template_directory_uri(); ?>/assets/images/use-encoretennis-header-v1.jpg') center;">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12">

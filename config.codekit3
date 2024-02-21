@@ -45,36 +45,12 @@
       "oAP" : "\/assets\/images\/ENCORE LINES_FAT_4.mp4",
       "oF" : 0
     },
-    "\/assets\/images\/ENCORE-LINES-1300-750-test.mov" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750-test.mov",
-      "oF" : 0
-    },
-    "\/assets\/images\/ENCORE-LINES-1300-750.mov" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750.mov",
-      "oF" : 0
-    },
     "\/assets\/images\/ENCORE-LINES-1300-750.mp4" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750.mp4",
-      "oF" : 0
-    },
-    "\/assets\/images\/ENCORE-LINES-1300-750.webm" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/ENCORE-LINES-1300-750.webm",
       "oF" : 0
     },
     "\/assets\/images\/encore-tennis-logo-notype2a.png" : {
@@ -115,16 +91,6 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
-    },
-    "\/assets\/images\/placeholder-logo-v2.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/images\/placeholder-logo-v2.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
     },
     "\/assets\/images\/Screenshot 2024-02-13 at 10.58.36.png" : {
       "ft" : 32768,
@@ -196,19 +162,6 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
-      "rq" : 75
-    },
-    "\/assets\/images\/use-tennis-point-wh.png" : {
-      "ft" : 32768,
-      "iS" : 6803,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/use-tennis-point-wh.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
       "rq" : 75
     },
     "\/assets\/js\/splide\/css\/splide-core.min.css" : {

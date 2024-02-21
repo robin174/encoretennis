@@ -25,14 +25,14 @@ a {
 		& a:hover, 
 		& button:hover, 
 		& video:hover {
-			cursor: url('../images/tennis-racket-solid.png'), url('../images/tennis-racket-solid.svg'), pointer;	
+			cursor: url('../images/tennis-ball-solid.png'), url('../assets/images/tennis-ball-solid.svg'), pointer;	
 		}
 	}
 }
 
 hr {
 	margin: 2rem 0;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.5); 
 }
 
 .container {

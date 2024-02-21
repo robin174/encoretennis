@@ -32,7 +32,7 @@ a {
 
 @media (min-width: 992px) {
   body a:hover, body button:hover, body video:hover {
-    cursor: url("../images/tennis-racket-solid.png"), url("../images/tennis-racket-solid.svg"), pointer;
+    cursor: url("../images/tennis-ball-solid.png"), url("../assets/images/tennis-ball-solid.svg"), pointer;
   }
 }
 hr {
