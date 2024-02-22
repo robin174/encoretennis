@@ -347,19 +347,6 @@ nav a:disabled {
 nav {
   padding: 1rem 0;
 }
-nav h1, nav h1 a.navbar-brand {
-  font-family: roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 1rem;
-  color: #fff;
-  margin-bottom: 0;
-}
-nav h1 a.navbar-brand:hover {
-  color: #39FF14;
-}
 nav a, nav .nav-link {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -380,6 +367,19 @@ nav a:active, nav .nav-link:active {
 }
 nav a:disabled, nav .nav-link:disabled {
   color: rgba(255, 255, 255, 0.3);
+}
+nav h1, nav h1 a.navbar-brand {
+  font-family: mislab-std, serif;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  letter-spacing: 0.033em;
+  color: #fff;
+  margin-bottom: 0;
+}
+nav h1 a.navbar-brand:hover {
+  color: #39FF14;
 }
 nav li.menu-item {
   transition: 0.3s;
