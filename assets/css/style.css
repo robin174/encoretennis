@@ -562,6 +562,7 @@ nav ul.dropdown-menu li.menu-item a.dropdown-item:hover {
 }
 
 .mol--page-splide-experiment {
+  background: #395659;
   position: relative;
   background-position: bottom;
   background-repeat: repeat-x;

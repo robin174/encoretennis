@@ -40,16 +40,93 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="mol--page-splide">
-			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
+		<?php /* Original Slide 
+			<section class="mol--page-splide">
+				<?php get_template_part('template-parts/unit-splide-gallery'); ?>
+			</section>
+		*/ ?>
+
+		<?php /* Thin lines / thick lines
+			<?php if(get_field('footer_style') == 'thinlines') { ?>
+				<?php get_template_part('template-parts/unit-lines-thin'); ?>
+			<?php } elseif(get_field('footer_style') == 'thicklines') { ?>
+				<?php get_template_part('template-parts/unit-lines-thick'); ?>
+			<?php } ?>
+		*/ ?>
+
+
+		<?php /* Caba Animationm */ ?>
+		<section class="mol--page-splide-experiment" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
+			<div class="container" style="position: relative;width:1300px;height:750px;">
+
+				<video id="myVideo" width="1300" height="750">
+					<source src="<?php echo get_template_directory_uri(); ?>/assets/images/ENCORE LINES_FAT_4.mp4" type="video/mp4">
+				</video>
+
+				<section class="splide" id="mySplide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<?php if( have_rows('home_repeater') ): ?>
+								<?php while( have_rows('home_repeater')): the_row(); ?>
+
+									<li class="splide__slide">
+										<figure>
+											<img class="mw-100" src="<?php the_sub_field('home_image_slide'); ?>" >
+										</figure>
+									</li>
+
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</ul>
+					</div>
+				</section>
+
+			</div>
 		</section>
 
-		<?php if(get_field('footer_style') == 'thinlines') { ?>
-			<?php get_template_part('template-parts/unit-lines-thin'); ?>
-		<?php } elseif(get_field('footer_style') == 'thicklines') { ?>
-			<?php get_template_part('template-parts/unit-lines-thick'); ?>
-		<?php } ?>
+		<!-- Splide (JS)
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/splide/splide.min.js" type="text/javascript"/></script>
+		<script type="text/javascript">
+			var splide = new Splide( '.splide', {
+				type: 'loop',
+				speed: 700,
+				start: 0,
+				autoplay: true,
+				perPage: 1
+			});
+			splide.mount();
 
+			const video = document.getElementById('myVideo');
+
+			// Hide Splide initially
+			//splide.root.style.display = 'none';
+			splide.root.style.visibility = 'hidden';
+			splide.root.style.opacity = 0;
+
+			// Event listener for the video element
+			video.addEventListener('click', function(event) {
+				event.preventDefault(); // Prevent any default click behavior
+
+				// Toggle play/pause based on the current state of the video
+				if (video.paused || video.ended) {
+					video.play();
+
+			    	// Set a timeout to display the Splide slider after 5 seconds
+				    	setTimeout(function() {
+				    		//splide.root.style.display = 'block';
+				      		splide.root.style.visibility = 'visible';  // Make the slider visible but fully transparent
+				      		setTimeout(function() {
+				        		splide.root.style.opacity = 1;  // Fade in the slider
+				        		//splide.root.style.visibility = 'visible';
+				      		}, 20); // Short delay before starting the fade-in
+				    	}, 2000);
+			    	
+			  	} else {
+			    	video.pause();
+			  	}
+			 });
+		</script>
 	</section>
 
 <?php get_footer(); ?>
