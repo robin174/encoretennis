@@ -40,9 +40,11 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<?php /* Need to add responsiveness and update var to avoid conflict
 		<section class="d-block d-lg-none mol--page-splide">
 			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
 		</section>
+		*/ ?>
 
 		<?php /* Thin lines / thick lines
 			<?php if(get_field('footer_style') == 'thinlines') { ?>
