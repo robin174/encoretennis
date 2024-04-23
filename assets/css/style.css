@@ -229,13 +229,13 @@ a.button-location:hover {
 
 @media (min-width: 768px) {
   a.button-location {
-    width: 150px;
+    width: 180px;
     margin: 0 0.5rem;
   }
 }
 @media (min-width: 992px) {
   a.button-location {
-    width: 180px;
+    width: 210px;
     margin: 0 1rem;
   }
 }
