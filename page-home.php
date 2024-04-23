@@ -40,11 +40,9 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<?php /* Original Slide 
-			<section class="mol--page-splide">
-				<?php get_template_part('template-parts/unit-splide-gallery'); ?>
-			</section>
-		*/ ?>
+		<section class="d-block d-md-none mol--page-splide ">
+			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
+		</section>
 
 		<?php /* Thin lines / thick lines
 			<?php if(get_field('footer_style') == 'thinlines') { ?>
@@ -55,8 +53,8 @@ get_header(); ?>
 		*/ ?>
 
 
-		<?php /* Caba Animationm */ ?>
-		<section class="mol--page-splide-experiment" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
+		<?php /* Caba Animation */ ?>
+		<section class="d-none d-md-block mol--page-splide-experiment" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
 			<div class="container" style="position: relative;width:1300px;height:750px;">
 
 				<video id="myVideo" width="1300" height="750">
