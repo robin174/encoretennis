@@ -1,4 +1,4 @@
-<section class="mol--section-team d-flex flex-row">
+<section class="mol--section-team d-flex flex-column flex-md-row">
 	<div class="atm--headshot">
 		<?php if ( has_post_thumbnail() ) { ?>
             <figure class="headshot text-center">
