@@ -40,22 +40,17 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<?php /* Need to add responsiveness and update var to avoid conflict
-		<section class="d-block d-lg-none mol--page-splide">
+		<section class="mol--page-splide">
 			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
 		</section>
-		*/ ?>
 
-		<?php /* Thin lines / thick lines
-			<?php if(get_field('footer_style') == 'thinlines') { ?>
-				<?php get_template_part('template-parts/unit-lines-thin'); ?>
-			<?php } elseif(get_field('footer_style') == 'thicklines') { ?>
-				<?php get_template_part('template-parts/unit-lines-thick'); ?>
-			<?php } ?>
-		*/ ?>
+		<?php if(get_field('footer_style') == 'thinlines') { ?>
+			<?php get_template_part('template-parts/unit-lines-thin'); ?>
+		<?php } elseif(get_field('footer_style') == 'thicklines') { ?>
+			<?php get_template_part('template-parts/unit-lines-thick'); ?>
+		<?php } ?>
 
-
-		<?php /* Caba Animation */ ?>
+		<?php /* 
 		<section class="d-none d-lg-block mol--page-splide-experiment" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot 2024-02-13 at 10.58.36.png');">
 			<div class="container" style="position: relative;width:1300px;height:750px;">
 
@@ -83,7 +78,9 @@ get_header(); ?>
 
 			</div>
 		</section>
+		*/ ?>
 
+		<?php /* 
 		<!-- Splide (JS)
 		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/splide/splide.min.js" type="text/javascript"/></script>
@@ -127,6 +124,7 @@ get_header(); ?>
 			  	}
 			 });
 		</script>
+		*/ ?>
 	</section>
 
 <?php get_footer(); ?>
