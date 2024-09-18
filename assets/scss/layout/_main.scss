@@ -233,4 +233,15 @@ section.mol--section-pdf {
 	& .bullet--intro {
 		margin-bottom: 10px;
 	}
+	& ul.bullet--copy {
+		list-style-type: none;
+		padding: 0;
+		& li {
+			font-size: 1.2rem;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
