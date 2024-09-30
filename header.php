@@ -51,7 +51,7 @@
 
 			map = new Map(document.getElementById("map"), {
 				center: { lat: 50.87752255, lng: -0.15155365 },
-				zoom: 12,
+				zoom: 11,
 			});
 
 			// Marker 1
