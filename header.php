@@ -70,7 +70,7 @@
 
 			// Marker 3
 			new google.maps.Marker({
-				position: { lat: 50.958694, lng: -0.2192399 },
+				position: { lat: 50.958723, lng: -0.140896 },
 				map: map,
 				title: "Burgess Hill Tennis Club",
 			});
