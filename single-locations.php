@@ -24,6 +24,8 @@ get_header(); ?>
 								<?php get_template_part('template-parts/unit-teamup-hurst'); ?>
 							<?php elseif(get_field('location_teamup') === 'embedqueens') : ?>
 								<?php get_template_part('template-parts/unit-teamup-queens'); ?>
+							<?php elseif(get_field('location_teamup') === 'embedstjohns') : ?>
+								<?php get_template_part('template-parts/unit-teamup-stjohns'); ?>
 							<?php endif; ?>
 						</section>
 
