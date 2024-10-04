@@ -660,8 +660,10 @@ section.mol--section-pdf {
   .block--section-lta ul.bullet--lta {
     list-style-type: none; }
     .block--section-lta ul.bullet--lta li {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       margin-bottom: 15px; }
+      .block--section-lta ul.bullet--lta li a {
+        color: #39FF14; }
       .block--section-lta ul.bullet--lta li:last-child {
         margin-bottom: 0; }
 

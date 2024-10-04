@@ -254,8 +254,11 @@ section.mol--section-pdf {
 	& ul.bullet--lta {
 		list-style-type: none;
 		& li {
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 			margin-bottom: 15px;
+			& a {
+				color: $color--secondary;
+			}
 			&:last-child {
 				margin-bottom: 0;
 			}
