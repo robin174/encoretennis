@@ -217,6 +217,8 @@ section.mol--section-pdf {
 	margin-bottom: $margin--general;
 }
 
+
+
 .block--heading {}
 
 .block--paragraph {}
@@ -236,6 +238,21 @@ section.mol--section-pdf {
 	& ul.bullet--copy {
 		list-style-type: none;
 		padding: 0;
+		& li {
+			font-size: 1.2rem;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.block--section-lta {
+	text-align: center;
+	padding: $padding--general 0;
+	& ul.bullet--lta {
+		list-style-type: none;
 		& li {
 			font-size: 1.2rem;
 			margin-bottom: 15px;

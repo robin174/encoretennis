@@ -654,6 +654,17 @@ section.mol--section-pdf {
     .block--bullet ul.bullet--copy li:last-child {
       margin-bottom: 0; }
 
+.block--section-lta {
+  text-align: center;
+  padding: 2rem 0; }
+  .block--section-lta ul.bullet--lta {
+    list-style-type: none; }
+    .block--section-lta ul.bullet--lta li {
+      font-size: 1.2rem;
+      margin-bottom: 15px; }
+      .block--section-lta ul.bullet--lta li:last-child {
+        margin-bottom: 0; }
+
 footer {
   font-family: roboto, sans-serif;
   font-style: normal;

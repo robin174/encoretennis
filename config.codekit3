@@ -818,6 +818,14 @@
       "oA" : 0,
       "oAP" : "\/template-parts\/unit-teamup-queens.php",
       "oF" : 0
+    },
+    "\/template-parts\/unit-teamup-stjohns.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/unit-teamup-stjohns.php",
+      "oF" : 0
     }
   },
   "hooks" : [

@@ -40,6 +40,16 @@ get_header(); ?>
 	                </div>
 	            </div>
 	        </div>
+	    <?php elseif(is_page('lta-youth-start')) : ?>
+	    	<?php if( have_rows('youth_start_repeater') ): // Repeater Field Name ?>
+	    		<div class="block--section-lta">
+		            <ul class="bullet--lta"> 
+		                <?php while( have_rows('youth_start_repeater') ): the_row(); ?>
+		                    <li><strong><?php the_sub_field('yt_course_title'); ?>:</strong>&nbsp;<?php the_sub_field('yt_course_age_time'); ?>,&nbsp;<?php the_sub_field('yt_course_age'); ?>.&nbsp;<a href="<?php the_sub_field('yt_course_url'); ?>" title="Book now">Book now</a></li>
+		                <?php endwhile; ?>
+		            </ul>
+	        	</div>
+			<?php endif; ?>
 		<?php elseif(is_page('competitions')) : ?>
 			<div class="container">
 				<div class="row justify-content-center">
