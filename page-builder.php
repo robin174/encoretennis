@@ -120,6 +120,23 @@ get_header(); ?>
 	</div>
 <?php endif; ?>
 
+<?php if(get_field('add_testimonial')) { ?><!-- TODO: To style and organise -->
+	<section class="mol--page-blockquote">
+		<div class="container" style="padding:0;">
+			<div class="row justify-content-center g-0">
+				<?php $testimonial_post = get_field('testimonial_post');
+				if( $testimonial_post ): ?>
+					<div class="col-8">
+						<blockquote>
+							<?php echo esc_html( $testimonial_post->testimonial_content ); ?>
+							<cite><?php echo esc_html( $testimonial_post->testimonial_credit ); ?></cite>
+						</blockquote>
+					</div>
+				<?php endif; ?>
+			</div>
+		</div>
+	</section>
+<?php } ?>
 
 <?php if(get_field('add_image')) { ?>
 	<section class="mol--page-separator">
