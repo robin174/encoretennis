@@ -129,6 +129,13 @@
 }
 
 
+section.mol--page-blockquote {
+	background-color: $color--primary;
+	& i {
+		margin-top: 10px;
+		color: $color--secondary;
+	}
+}
 
 section.org--section-events {
 	& h4.ut--holiday {

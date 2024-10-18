@@ -165,8 +165,22 @@ p.emph {
     margin-right: 10px; }
 
 blockquote {
-  font-size: 1.1rem;
-  padding: 1rem; }
+  text-align: center;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: #fff; }
+  blockquote cite {
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 10px;
+    display: block;
+    color: #39FF14; }
 
 a.button-location {
   font-family: mislab-std, serif;
@@ -517,6 +531,12 @@ nav {
   .mol--section-team .atm--headshot {
     margin-bottom: 40px; }
   .mol--section-team.ut--green {
+    color: #39FF14; }
+
+section.mol--page-blockquote {
+  background-color: #395659; }
+  section.mol--page-blockquote i {
+    margin-top: 10px;
     color: #39FF14; }
 
 section.org--section-events h4.ut--holiday {
