@@ -111,7 +111,7 @@ get_header(); ?>
 			</div>
 		<?php endif; ?>
 
-		<?php if(get_field('add_testimonial')) { ?><!-- TODO: To style and organise -->
+		<?php if(get_field('add_testimonial')) { ?>
 			<section class="mol--page-blockquote">
 				<div class="container" style="padding:0;">
 					<div class="row justify-content-center g-0">

@@ -40,6 +40,25 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<?php if(get_field('add_testimonial')) { ?>
+			<section class="mol--page-blockquote">
+				<div class="container">
+					<div class="row justify-content-center g-0">
+						<?php $testimonial_post = get_field('testimonial_post');
+						if( $testimonial_post ): ?>
+							<div class="col-12 col-md-8 text-center">
+								<i class="fa-sharp fa-4x fa-solid fa-messages"></i>
+								<blockquote>
+									&rdquo;<?php echo esc_html( $testimonial_post->testimonial_content ); ?>&ldquo;
+									<cite>&#126;&nbsp;<?php echo esc_html( $testimonial_post->testimonial_credit ); ?></cite>
+								</blockquote>
+							</div>
+						<?php endif; ?>
+					</div>
+				</div>
+			</section>
+		<?php } ?>
+
 		<section class="mol--page-splide">
 			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
 		</section>
