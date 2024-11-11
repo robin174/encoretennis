@@ -128,6 +128,21 @@
 	}
 }
 
+.mol--page-posts {
+	background-color: $color--primary;
+	padding: $padding--general 0;
+	& .atm--post-title {
+		padding: $padding--small*1.5;
+		background: rgba(0,0,0,0.1);
+	}
+	& p {
+		margin-top: 10px;
+		margin-bottom: 0;
+		font-size: 1.2rem;
+
+	}
+}
+
 
 section.mol--page-blockquote {
 	background-color: $color--primary;

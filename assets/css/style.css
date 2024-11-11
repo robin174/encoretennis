@@ -533,6 +533,17 @@ nav {
   .mol--section-team.ut--green {
     color: #39FF14; }
 
+.mol--page-posts {
+  background-color: #395659;
+  padding: 2rem 0; }
+  .mol--page-posts .atm--post-title {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.1); }
+  .mol--page-posts p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.2rem; }
+
 section.mol--page-blockquote {
   background-color: #395659; }
   section.mol--page-blockquote i {

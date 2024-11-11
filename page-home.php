@@ -59,6 +59,40 @@ get_header(); ?>
 			</section>
 		<?php } ?>
 
+		<section class="mol--page-posts">
+			<div class="container">
+				<div class="row">
+					<?php
+			            $args=array(
+			 				'post_type' => 'post',
+							'order' => 'DESC',
+							'posts_per_page' => 3,
+							'post_status' => 'publish',
+			            );
+			            $my_query = null;
+			            $my_query = new WP_Query($args);
+			            if( $my_query->have_posts() ) {
+			            while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+			            	<div class="col-12 col-lg-4">
+			            		<section class="atm--post-image">
+				            		<figure>
+				            			<a href="<?php the_permalink(); ?>"><img title="<?php the_title();?>" class="mw-100" src="<?php the_field('featured_image'); ?>"></a>
+				            		</figure>
+				            	</section>
+				            	<section class="atm--post-title mb-4">
+				            		<h2><?php the_title();?></h2>
+				            		<p><a href="<?php the_permalink(); ?>">Read more</a></p>
+			            		</section>
+			            	</div>
+
+			            <?php endwhile; }
+			        wp_reset_query();  // Restore global post data stomped by the_post().
+			        ?>
+			    </div>
+			</div>
+		</section>
+
 		<section class="mol--page-splide">
 			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
 		</section>
