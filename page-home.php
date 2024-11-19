@@ -40,6 +40,10 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<section class="mol--page-splide">
+			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
+		</section>
+
 		<?php if(get_field('add_testimonial')) { ?>
 			<section class="mol--page-blockquote">
 				<div class="container">
@@ -91,10 +95,6 @@ get_header(); ?>
 			        ?>
 			    </div>
 			</div>
-		</section>
-
-		<section class="mol--page-splide">
-			<?php get_template_part('template-parts/unit-splide-gallery'); ?>
 		</section>
 
 		<?php if(get_field('footer_style') == 'thinlines') { ?>
