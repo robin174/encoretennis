@@ -545,6 +545,7 @@ nav {
     font-size: 1.2rem; }
 
 section.mol--page-blockquote {
+  margin-top: 2rem;
   background-color: #395659; }
   section.mol--page-blockquote i {
     margin-top: 10px;
