@@ -2,7 +2,7 @@
 	<div class="atm--headshot">
 		<?php if ( has_post_thumbnail() ) { ?>
             <figure class="headshot text-center">
-				<?php the_post_thumbnail('thumbnail');?>
+				<?php the_post_thumbnail('normal');?>
 			</figure>
         <?php } else { ?>
         	<figure class="headshot-logo">
