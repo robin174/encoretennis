@@ -18,7 +18,12 @@ get_header(); ?>
 						<div>
 							<h1 class="type--brand-page"><?php the_title(); ?></h1>
 						</div>
+						<div>
+							<p>To book at this location, visit the Encore Tennis LTA Clubspark page, by clicking the button below.</p>
+							<a class="button-location" target="_blank" href="<?php the_field('location_clubspark_url'); ?>">Book with Encore Tennis</a>
+						</div>
 
+						<?php /*
 						<section>
 							<?php if(get_field('location_teamup') === 'embedhurst') : ?>
 								<?php get_template_part('template-parts/unit-teamup-hurst'); ?>
@@ -27,7 +32,8 @@ get_header(); ?>
 							<?php elseif(get_field('location_teamup') === 'embedstjohns') : ?>
 								<?php get_template_part('template-parts/unit-teamup-stjohns'); ?>
 							<?php endif; ?>
-						</section>
+						</section> 
+						*/?>
 
 					</div>
 				</div>
