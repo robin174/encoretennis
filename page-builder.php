@@ -140,6 +140,50 @@ get_header(); ?>
 	</div>
 <?php endif; ?>
 
+<script>
+	let map;
+	async function initMap() {
+			const { Map } = await google.maps.importLibrary("maps");
+
+		map = new Map(document.getElementById("map"), {
+			center: { lat: 50.87752255, lng: -0.15155365 },
+			zoom: 11,
+		});
+
+		// Marker 1 
+		/*
+		new google.maps.Marker({
+			position: { lat: 50.9311092, lng: -0.1772033 },
+			map: map,
+			title: "Hurstpierpoint Lawn Tennis Club",
+		});
+		*/
+
+		// Marker 2
+		new google.maps.Marker({
+			position: { lat: 50.8250679, lng: -0.1233311 },
+			map: map,
+			title: "Queens Park Tennis Club",
+		});
+
+		// Marker 3
+		new google.maps.Marker({
+			position: { lat: 50.958723, lng: -0.140896 },
+			map: map,
+			title: "Burgess Hill Tennis Club",
+		});
+
+		// Marker 4
+		new google.maps.Marker({
+			position: { lat: 50.998894, lng: -0.115643 },
+			map: map,
+			title: "Beech Hurst Gardens Tennis Centre",
+		});
+	}
+	initMap();
+</script>
+
+
 <?php if(get_field('add_image')) { ?>
 	<section class="mol--page-separator">
 		<div class="container" style="padding:0;">

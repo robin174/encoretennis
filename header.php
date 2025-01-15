@@ -44,40 +44,6 @@
 		  });
 		</script>
 
-    	<script>
-		let map;
-		async function initMap() {
-  			const { Map } = await google.maps.importLibrary("maps");
-
-			map = new Map(document.getElementById("map"), {
-				center: { lat: 50.87752255, lng: -0.15155365 },
-				zoom: 11,
-			});
-
-			// Marker 1
-			new google.maps.Marker({
-				position: { lat: 50.9311092, lng: -0.1772033 },
-				map: map,
-				title: "Hurstpierpoint Lawn Tennis Club",
-			});
-
-			// Marker 2
-			new google.maps.Marker({
-				position: { lat: 50.8250679, lng: -0.1233311 },
-				map: map,
-				title: "Queens Park Tennis Club",
-			});
-
-			// Marker 3
-			new google.maps.Marker({
-				position: { lat: 50.958723, lng: -0.140896 },
-				map: map,
-				title: "Burgess Hill Tennis Club",
-			});
-		}
-		initMap();
-    	</script>
-
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FY097S4Z0X"></script>
 		<script>
